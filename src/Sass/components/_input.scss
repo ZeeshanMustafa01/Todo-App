@@ -1,0 +1,22 @@
+.form {
+	display: flex;
+	align-items: center;
+}
+
+.input {
+	&_item {
+		width: 100%;
+		padding: 1.2rem;
+		margin-right: -3rem;
+		border-radius: 5px;
+		letter-spacing: 1px;
+		border: 1px solid $color-secondary;
+	}
+	&_button {
+		background-color: transparent;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		font-size: 2.3rem;
+	}
+}

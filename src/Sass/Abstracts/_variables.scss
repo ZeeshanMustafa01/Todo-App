@@ -1,0 +1,18 @@
+// ****  Colors   **** //
+$color-primary: #374151;
+$color-secondary: #4b5563;
+
+// Shades
+$grey-shade-one: #9ca3af82;
+$grey-shade-two: #d1d5db;
+$grey-shade-three: #e5e7eb;
+$grey-shade-four: #f3f4f6;
+$grey-shade-five: #f9fafb;
+
+// Center
+@mixin position-center($gap) {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: $gap;
+}

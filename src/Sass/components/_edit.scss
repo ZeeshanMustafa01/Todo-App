@@ -1,0 +1,74 @@
+.edit-overlay {
+	background-color: rgba(#000, 0.3);
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	@include position-center(0);
+}
+.edit-container {
+	border-radius: 1rem;
+	padding: 3rem;
+	background-color: #fff;
+
+	@include position-center(2rem);
+	flex-direction: column;
+}
+
+.edit_actions {
+	@include position-center(1rem);
+}
+
+.edit_quantity,
+.minus,
+.plus {
+	font-size: 1.6rem;
+	font-weight: 800;
+	width: 4rem;
+	height: 3rem;
+	border-radius: 6rem;
+	border: 1px solid $color-secondary;
+
+	@include position-center(0);
+}
+
+.plus,
+.minus {
+	border-radius: 40%;
+	cursor: pointer;
+	font-size: 2rem;
+	color: white;
+	border: none;
+}
+
+.plus {
+	background-color: #34d399;
+}
+.minus {
+	background-color: #ef4444;
+}
+.edit_ok {
+	font-size: 1.8rem;
+	font-weight: 600;
+	letter-spacing: 1px;
+	border: none;
+	padding: 0.8rem 10rem;
+	border-radius: 2rem;
+	cursor: pointer;
+	color: #fff;
+	background-color: $color-primary;
+}
+
+.edit_remove {
+	border: none;
+	background-color: transparent;
+	font-weight: 500;
+	font-size: 1.4rem;
+	letter-spacing: 1.2px;
+	cursor: pointer;
+	color: red;
+	transition: 0.3s;
+	text-rendering: inherit;
+}
